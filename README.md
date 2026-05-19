@@ -1,25 +1,37 @@
-# 🚢 Titanic-Survival-Predictor
+# Day 4: Titanic Competition - Feature Engineering + Kaggle Submission 🚢
 
-Predict if a passenger would survive the Titanic Disaster using machine learning.
+**Date**: 19 Oct 2026 | **Kaggle Score: 0.78229** | **Rank: Top 25%**
 
-**Current Best:** 78.77% Accuracy | **Kaggle Score:** 0.77990  
-**Progress:** Day 3/30 | **Live Demo:** Coming Soon  
-**Tech Stack:** Python, Pandas, Scikit-Learn
+---
 
-## 📊 Progress
+## ✅ What I Did Today
 
-| Day | Topic | Accuracy | Kaggle Score | Status |
-| --- | --- | --- | --- | --- |
-| 1 | EDA & Data Cleaning | - | - | ✅ Done |
-| 2 | Baseline Model | 75.42% | 0.76555 | ✅ Done |
-| 3 | Feature Engineering | **78.77%** | **0.77990** | ✅ Done |
-| 4 | RandomForest | Target: 82%+ | - | 🔜 Next |
-| 5 | XGBoost Tuning | Target: 84%+ | - | ⏳ Planned |
+1. **Kaggle Setup**: Joined the Titanic competition
+2. **Feature Engineering**: 
+   - Extracted `Title` from `Name` using regex
+   - Created `FamilySize = SibSp + Parch + 1`
+3. **Model Training**: Built model using `RandomForestClassifier`
+4. **Validation**: Got 81.01% accuracy using 80-20 train-test split
+5. **Kaggle Submission**: Uploaded `submission_day4.csv` → **Scored 0.78229**
 
-## 🎯 Day 3 Highlights
-- **Model:** Logistic Regression - No change from Day 2
-- **New Features:** Title, FamilySize, IsAlone
-- **Key Learning:** Domain knowledge > Complex models. +3.35% boost from 3 features
-- **Overfitting Check:** Train 81.2% vs Val 78.77% - Stable
+---
 
-## 📈 Score Progression
+## 📚 What I Learned Today
+
+| Concept | Key Takeaway |
+| --- | --- |
+| **Feature Engineering** | Creating new features improved score by 1.5% |
+| **Domain Knowledge** | `Title` like Mr/Master/Miss heavily impacts survival |
+| **Label Encoding** | Converted `Sex` and `Title` to 0,1,2 for ML model |
+| **Overfitting Check** | Validation 81% vs Kaggle 78.2% = Good generalization |
+| **Kaggle Workflow** | Full cycle: Join → Download → Predict → Submit → Leaderboard |
+
+---
+
+## 🛠️ What I Built Today
+
+**Files Created:**
+1. `titanic_day4.ipynb` - Complete code with EDA + Model + Predictions
+2. `submission_day4.csv` - Final file submitted to Kaggle
+
+**Model Pipeline:**
