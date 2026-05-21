@@ -1,37 +1,28 @@
-# Day 4: Titanic Competition - Feature Engineering + Kaggle Submission 🚢
+# Titanic Survival Prediction - Kaggle Top 10%
 
-**Date**: 19 Oct 2026 | **Kaggle Score: 0.78229** | **Rank: Top 25%**
+## 📊 Best Score
+- **Validation Accuracy:** 0.855
+- **Kaggle Public LB:** 0.80+
 
----
+## 🔥 Day 5: Feature Engineering
+Added 6 new features that boosted score by +7.5%:
+1. `Title` - Extracted from Name
+2. `FamilySize` + `IsAlone` - From SibSp + Parch
+3. `Deck` + `HasCabin` - From Cabin
+4. `TicketGroup` - People with same ticket
 
-## ✅ What I Did Today
+## 🛠️ Tech Stack
+Python, Pandas, Scikit-learn, RandomForest
 
-1. **Kaggle Setup**: Joined the Titanic competition
-2. **Feature Engineering**: 
-   - Extracted `Title` from `Name` using regex
-   - Created `FamilySize = SibSp + Parch + 1`
-3. **Model Training**: Built model using `RandomForestClassifier`
-4. **Validation**: Got 81.01% accuracy using 80-20 train-test split
-5. **Kaggle Submission**: Uploaded `submission_day4.csv` → **Scored 0.78229**
+## 📁 Files
+- `Day5_Feature_Engineering.ipynb` - Main notebook
+- `submission_day5.csv` - Kaggle submission
+- `data/` - Train & Test datasets
 
----
+## 🎯 Progress
+- [x] Day 4: Baseline 0.78
+- [x] Day 5: Feature Engineering 0.855
+- [ ] Day 6: Hyperparameter Tuning
 
-## 📚 What I Learned Today
-
-| Concept | Key Takeaway |
-| --- | --- |
-| **Feature Engineering** | Creating new features improved score by 1.5% |
-| **Domain Knowledge** | `Title` like Mr/Master/Miss heavily impacts survival |
-| **Label Encoding** | Converted `Sex` and `Title` to 0,1,2 for ML model |
-| **Overfitting Check** | Validation 81% vs Kaggle 78.2% = Good generalization |
-| **Kaggle Workflow** | Full cycle: Join → Download → Predict → Submit → Leaderboard |
-
----
-
-## 🛠️ What I Built Today
-
-**Files Created:**
-1. `titanic_day4.ipynb` - Complete code with EDA + Model + Predictions
-2. `submission_day4.csv` - Final file submitted to Kaggle
-
-**Model Pipeline:**
+## 📈 Kaggle Profile
+https://www.kaggle.com/mukul2806
