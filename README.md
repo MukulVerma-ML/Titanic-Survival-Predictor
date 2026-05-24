@@ -1,28 +1,12 @@
-# Titanic Survival Prediction - Kaggle Top 10%
+# Day 6 Notes
 
-## 📊 Best Score
-- **Validation Accuracy:** 0.855
-- **Kaggle Public LB:** 0.80+
+## What I Learned
+1. GridSearchCV se best params auto mil jaate hain
+2. get_dummies ke baad train/test columns align karna zaroori hai
+3. CV Score 0.82+ ka matlab Kaggle pe 0.77+ aayega
 
-## 🔥 Day 5: Feature Engineering
-Added 6 new features that boosted score by +7.5%:
-1. `Title` - Extracted from Name
-2. `FamilySize` + `IsAlone` - From SibSp + Parch
-3. `Deck` + `HasCabin` - From Cabin
-4. `TicketGroup` - People with same ticket
+## Error Faced
+ValueError: columns mismatch. Fixed using reindex()
 
-## 🛠️ Tech Stack
-Python, Pandas, Scikit-learn, RandomForest
-
-## 📁 Files
-- `Day5_Feature_Engineering.ipynb` - Main notebook
-- `submission_day5.csv` - Kaggle submission
-- `data/` - Train & Test datasets
-
-## 🎯 Progress
-- [x] Day 4: Baseline 0.78
-- [x] Day 5: Feature Engineering 0.855
-- [ ] Day 6: Hyperparameter Tuning
-
-## 📈 Kaggle Profile
-https://www.kaggle.com/mukul2806
+## Next: Day 7
+XGBoost try karna hai. Target: CV 0.84+, Kaggle 0.79+
