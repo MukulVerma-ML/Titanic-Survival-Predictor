@@ -1,29 +1,34 @@
-# 🚢 Titanic: Machine Learning from Disaster
+# IMDB Movie Review Sentiment Analysis 🎬
 
-7-day hands-on ML challenge to predict passenger survival on the Titanic. 
+Classify IMDB movie reviews as Positive or Negative using TF-IDF + Logistic Regression.
 
-**🏆 Best Score: 0.78708** | **📊 Rank: Top 15%** on Kaggle Leaderboard
+**Accuracy: 85.44%** on 10,000 test reviews
 
-### 🔍 Key Highlights
-- **Feature Engineering**: Extracted `Title` from Name, improved accuracy by 2%
-- **Models Compared**: RandomForest vs XGBoost with Cross-Validation
-- **Best Model**: RandomForestClassifier with GridSearchCV tuning
-- **Key Features**: Title, Sex, Pclass, Age, Embarked, Fare
-
-### 📈 Results
-| Model | Features | CV Score | Kaggle Score |
-| --- | --- | --- | --- |
-| Day 6 RF | 5 features | 0.8286 | 0.78708 |
-| Day 7 XGB | 4 features | 0.8148 | 0.75119 |
+### 📊 Results
+| Metric | Score |
+| --- | --- |
+| Accuracy | 85.44% |
+| Precision | 0.89 |
+| Recall | 0.88 |
+| F1-Score | 0.88 |
 
 ### 🛠️ Tech Stack
-`Python` `Pandas` `Scikit-learn` `XGBoost` `Jupyter`
+- Python, Pandas, Scikit-learn
+- TF-IDF Vectorization 
+- Logistic Regression
+- Regex for Text Cleaning
 
-### 🎓 Learnings
-1. Feature engineering beats complex models
-2. CV score ≠ Kaggle score, watch for overfitting
-3. Title is the strongest single feature for Titanic
+### 📂 How to Run
+1. Download `IMDB Dataset.csv` from [Kaggle](https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews)
+2. Install requirements: `pip install pandas scikit-learn`
+3. Run `main.py` or open `IMDB_Sentiment.ipynb` in Colab
+4. Model trains in ~2 minutes on CPU
 
-### 🚀 How to Run
-```bash
-python day6_final.py
+### 📌 Key Features
+1. Text preprocessing: HTML removal, lowercase, noise cleaning
+2. TF-IDF with 5000 features for optimal speed/accuracy trade-off
+3. Stratified train-test split to maintain class balance
+4. Custom prediction function for new reviews
+
+
+⭐ If you like this project, give it a star!
